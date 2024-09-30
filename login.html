@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - MyWebsite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Custom Styles -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">JobHunt</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jobs.html">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="browse.html">Browse</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link btn btn-custom me-2" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-custom" href="signup.html">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Login</h2>
+  <div class="border rounded p-4 shadow-sm bg-white mx-auto" style="max-width: 400px;">
+    <form>
+      <div class="mb-3">
+        <label for="loginEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="loginEmail" required>
+      </div>
+      <div class="mb-3">
+        <label for="loginPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="loginPassword" required>
+      </div>
+
+      <!-- Radio Buttons for User Type -->
+      <div class="mb-3">
+        <label class="form-label">Login as:</label>
+        <div>
+          <input type="radio" id="student" name="userType" value="student" required>
+          <label for="student" class="me-3">Student</label>
+
+          <input type="radio" id="recruiter" name="userType" value="recruiter" required>
+          <label for="recruiter">Recruiter</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-custom">Login</button>
+    </form>
+
+    <!-- Sign Up Prompt -->
+    <div class="mt-4 text-center">
+      <p>If you don't have an account, <a href="signup.html" class="btn btn-link">Sign Up</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

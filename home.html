@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - MyWebsite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Custom Styles -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="home.html">JobHunt</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jobs.html">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="search.html">Search</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link btn btn-custom me-2" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-custom" href="signup.html">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="container-fluid bg-light text-center py-5">
+  <h1>Welcome to JobHunt</h1>
+  <p class="lead">Your one-stop solution for job search and career development</p>
+</div>
+
+<!-- Job Search Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Search, Apply & Get Your Dream Job</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search Job" aria-label="Search Job">
+        <button class="btn btn-custom" type="button" onclick="window.location.href='search.html'">Search</button>
+      </div>
+      <h5 class="text-center">Examples of Job Roles:</h5>
+      <ul class="list-group">
+        <li class="list-group-item">Full Stack Developer</li>
+        <li class="list-group-item">Frontend Developer</li>
+        <li class="list-group-item">Backend Developer</li>
+        <li class="list-group-item">Data Scientist</li>
+        <li class="list-group-item">UX/UI Designer</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
